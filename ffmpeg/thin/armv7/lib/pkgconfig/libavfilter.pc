@@ -1,0 +1,14 @@
+prefix=/Users/weiguangmeng/ffmpegworkspace/sourceCode/ffmpeg/thin/armv7
+exec_prefix=${prefix}
+libdir=/Users/weiguangmeng/ffmpegworkspace/sourceCode/ffmpeg/thin/armv7/lib
+includedir=/Users/weiguangmeng/ffmpegworkspace/sourceCode/ffmpeg/thin/armv7/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.87.100
+Requires: libavutil >= 56.58.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

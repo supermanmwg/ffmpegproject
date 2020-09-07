@@ -1,0 +1,14 @@
+prefix=/Users/weiguangmeng/ffmpegworkspace/sourceCode/ffmpeg/thin/arm64
+exec_prefix=${prefix}
+libdir=/Users/weiguangmeng/ffmpegworkspace/sourceCode/ffmpeg/thin/arm64/lib
+includedir=/Users/weiguangmeng/ffmpegworkspace/sourceCode/ffmpeg/thin/arm64/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.101.101
+Requires: libavutil >= 56.58.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -liconv -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo
+Libs.private: 
+Cflags: -I${includedir}
